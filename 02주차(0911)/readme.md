@@ -1,5 +1,5 @@
 <pre>
-[ 버퍼 처리 ]
+[<mark> 버퍼 처리 </mark>]
 #include <stdio.h>int main(){        
   char string[20];        
   char c;        
