@@ -18,8 +18,19 @@
       문자를 표현하고 싶다라고 하면 printf("%c", 49); printf("%c", 57); 를 하면 화면에 19라는 문자가 화면에 보여지게 됩니다.
       위에 있는 해당 코드는 어떤 메뉴의 숫자를 선택했냐라는 질의의 값이라고 할 수 있습니다.
       
-
-
+[ <mark>난수 생성</mark> ]
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <time.h>
+  int main(void)
+  {
+  int i;
+  srand(time(NULL));
+  for(i=1;i<=6;i++)
+  printf("%2d:%d\n",rand()%45+1);
+  return 0;
+  }
+  ㄴ> 이 코드는 1~45까지 하나의 숫자를 출력하는 프로그램입니다. 
 
 
 </pre>
