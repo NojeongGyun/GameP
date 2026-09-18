@@ -1,5 +1,5 @@
 <pre>
-[ <mark>숫자와 문자</mark> ]
+[ <mark>문자형 숫자의 아스키코드</mark> ]
   int sub_menu_display01(void)
   {
   int select;
