@@ -36,5 +36,41 @@
       이를 방지하기 위해 실행 할 때 마다 매번 바뀌는 seed값을 설정을 해야 실행마다 난수가 다르게 생성 될 것입니다. 난수를 다르게 생성하기 
       위해 time(null)이라는 실행하는 현재 시간에 기준해서 seed를 time의 숫자형으로 반환시켜 난수를 매번 다르게 생성 할 수 있습니다. 
       
+[ <mark>문자 배열 </mark> ]
+struct trump
+{
+    char order;
+    char shape[3];
+    char number;
+};
 
+trump card[52];
+
+int i, j;
+
+char shape[4][3] = {"♠", "♦", "♥", "♣"};
+
+for (i = 0; i < 4; i++)
+{
+    for (j = i * 13; j < i * 13 + 13; j++)
+    {
+        m_card[j].order = i;
+
+        strcpy(m_card[j].shape, shape[i]);
+
+        m_card[j].number = j % 13 + 1;
+
+        switch (m_card[j].number)
+        {
+            // 1일 경우 number에 'A' 저장
+            // 11일 경우 number에 'J' 저장
+            // 12일 경우 number에 'Q' 저장
+            // 13일 경우 number에 'K' 저장
+        }
+    }
+}
+ㄴ-> 이 코드는 스페이드, 다이아, 하트, 클로버 중 1개 그리고 숫자중 1개를 임의로 입력받아 화면에 출력하는 프로그램입니다.  
+     이 코드 안에 char shape[3]가 있습니다. 배열 크기를 3을 잡는 이유는 문양, 숫자를 받고, 문자열 끝을 나타내는 /0이
+     넣어지기 때문에 char shape[2]가 아닌 char shape[3]으로 코드를 작성한 이유입니다.
+    
 </pre>
