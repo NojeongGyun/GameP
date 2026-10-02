@@ -1,6 +1,6 @@
 <pre>
 [<mark>가변 인수</mark>]
-p24
+pdf.001    p24
 
   
   
