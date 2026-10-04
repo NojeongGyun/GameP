@@ -1,6 +1,10 @@
 <pre>
 [<mark>가변 인수</mark>]
-pdf.001    p24
+가변인수는 개수가 정해져 있지 않는 인수입니다.
+printf(const char *format, ...); 보시면 *format은 고정이고, ...은 가변입니다.
+scanf도 마찬가지로 scanf("%d %d %d", &a1,&a2, &a3),  scanf("%d %d", &a1,&a2)  여러개 넣을 수 있습니다.
+
+
 
   
 [ <mark>배열 크기 할당</mark> ]  
