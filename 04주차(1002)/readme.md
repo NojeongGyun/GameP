@@ -1,8 +1,8 @@
 <pre>
 [<mark>가변 인수</mark>]
-가변인수는 개수가 정해져 있지 않는 인수입니다.
-printf(const char *format, ...); 보시면 *format은 고정이고, ...은 가변입니다.
-scanf도 마찬가지로 scanf("%d %d %d", &a1,&a2, &a3),  scanf("%d %d", &a1,&a2)  여러개 넣을 수 있습니다.
+가변 인수는 함수 호출 시 인수의 개수가 정해져 있지 않고 변할 수 있는 인수입니다.
+printf(const char *format, ...);를 보면 format은 고정된 인수이고, ...은 가변 인수를 의미합니다.
+scanf도 마찬가지로 scanf("%d %d %d", &a1, &a2, &a3)처럼 3개의 변수를 받을 수도 있고, scanf("%d %d", &a1, &a2)처럼 2개의 변수를 받을 수도 있습니다.
 
 
 
